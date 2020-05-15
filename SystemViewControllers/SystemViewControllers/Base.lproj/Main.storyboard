@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SystemViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="4Wn-Va-BS7">
+                                <rect key="frame" x="20" y="238" width="374" height="420"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Numbers категории" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-NU-uaU">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="358"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="358" id="WV3-u5-AeC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="bOm-Qf-sma">
+                                        <rect key="frame" x="0.0" y="391" width="374" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jc-eZ-AhK">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="29"/>
+                                                <state key="normal" title="Share"/>
+                                                <connections>
+                                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fn-uA-kzt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIn-8v-z9W">
+                                                <rect key="frame" x="117" y="0.0" width="40" height="29"/>
+                                                <state key="normal" title="Safari"/>
+                                                <connections>
+                                                    <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fas-Xl-rp4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rea-9l-O77">
+                                                <rect key="frame" x="220" y="0.0" width="54" height="29"/>
+                                                <state key="normal" title="Camera"/>
+                                                <connections>
+                                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iax-A9-B3z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-p5-fGA">
+                                                <rect key="frame" x="337" y="0.0" width="37" height="29"/>
+                                                <state key="normal" title="Email"/>
+                                                <connections>
+                                                    <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbb-7r-FSG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Wn-Va-BS7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ho-Vf-TtH"/>
+                            <constraint firstItem="4Wn-Va-BS7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CLp-KA-coT"/>
+                            <constraint firstItem="4Wn-Va-BS7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="194" id="YRD-Tk-y4S"/>
+                            <constraint firstItem="4Wn-Va-BS7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n3O-ZZ-5rH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewOutlet" destination="Psf-NU-uaU" id="t0O-qd-tyh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Numbers категории" width="505" height="331"/>
+    </resources>
+</document>

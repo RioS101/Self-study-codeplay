@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="3" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="5pZ-gQ-Zoq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Снимок экрана 2019-11-24 в 20.26.08" translatesAutoresizingMaskIntoConstraints="NO" id="5jQ-Mn-yhD">
+                                        <rect key="frame" x="0.0" y="0.0" width="613" height="405"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5jQ-Mn-yhD" firstAttribute="leading" secondItem="5pZ-gQ-Zoq" secondAttribute="leading" id="SB7-dV-Iha"/>
+                                    <constraint firstAttribute="bottom" secondItem="5jQ-Mn-yhD" secondAttribute="bottom" id="Yja-nD-lJL"/>
+                                    <constraint firstItem="5jQ-Mn-yhD" firstAttribute="top" secondItem="5pZ-gQ-Zoq" secondAttribute="top" id="fr8-EU-BS2"/>
+                                    <constraint firstAttribute="trailing" secondItem="5jQ-Mn-yhD" secondAttribute="trailing" id="uId-49-Oam"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5pZ-gQ-Zoq" secondAttribute="trailing" id="1dP-sQ-PhP"/>
+                            <constraint firstItem="5pZ-gQ-Zoq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4C-kq-9oo"/>
+                            <constraint firstItem="5pZ-gQ-Zoq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H2t-Rb-nRC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5pZ-gQ-Zoq" secondAttribute="bottom" id="z9d-DV-B7X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5jQ-Mn-yhD" id="Jwc-eH-K2n"/>
+                        <outlet property="scrollView" destination="5pZ-gQ-Zoq" id="waf-9y-6ZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Снимок экрана 2019-11-24 в 20.26.08" width="613" height="405"/>
+    </resources>
+</document>
